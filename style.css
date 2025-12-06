@@ -1,0 +1,165 @@
+/* RESET BÁSICO - Explicar: remove margens padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* CORPO DA PÁGINA - Explicar: estilo geral da página */
+body {
+    background-color: #f0f2f5;
+    color: #333;
+    padding: 20px;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+/* CONTAINER PRINCIPAL - Explicar: centraliza o conteúdo */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s;
+}
+
+/* CABEÇALHO - Explicar: estilo do topo da página */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+h1 {
+    color: #2196F3;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    color: #666;
+    font-size: 1.2rem;
+}
+
+/* SEÇÕES - Explicar: estilo das áreas de conteúdo */
+section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    transition: background-color 0.5s;
+}
+
+h2 {
+    color: #2196F3;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* FOTO DE PERFIL - Explicar: estilo da imagem */
+.foto-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #2196F3;
+    margin-bottom: 15px;
+    transition: border-color 0.5s;
+}
+
+/* LISTA DE INTERESSES - Explicar: estilo da lista */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    background-color: #e3f2fd;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    transition: background-color 0.5s;
+}
+
+/* BOTÕES - Explicar: estilo dos elementos clicáveis */
+button {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0b7dda;
+    transform: translateY(-2px);
+}
+
+.cores {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+    flex-wrap: wrap;
+}
+
+.cor-btn {
+    width: 80px;
+    height: 40px;
+}
+
+/* RODAPÉ - Explicar: estilo da parte inferior */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #e0e0e0;
+    color: #666;
+}
+
+/* MODO NOTURNO - Explicar: classes para o modo escuro */
+.modo-noturno {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.modo-noturno .container {
+    background-color: #1e1e1e;
+}
+
+.modo-noturno section {
+    background-color: #2d2d2d;
+}
+
+.modo-noturno li {
+    background-color: #3d3d3d;
+}
+
+/* RESPONSIVIDADE - Explicar: adaptação para telas menores */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .cores {
+        justify-content: center;
+    }
+}

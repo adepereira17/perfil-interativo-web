@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil Digital</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Cabeçalho com nome -->
+        <header>
+            <h1 id="nome">Seu Nome Aqui</h1>
+            <p class="subtitulo">Desenvolvedor Web Iniciante</p>
+        </header>
+        
+        <!-- Seção principal -->
+        <main>
+            <!-- Foto de perfil -->
+            <div class="foto-container">
+                <img src="avatar.png" alt="Foto de perfil" id="foto-perfil">
+                <button id="trocar-foto">Trocar Cor do Fundo</button>
+            </div>
+            
+            <!-- Sobre mim -->
+            <section class="sobre">
+                <h2><i class="fas fa-user"></i> Sobre Mim</h2>
+                <p id="texto-sobre">Olá! Eu sou estudante de desenvolvimento web. Estou aprendendo HTML, CSS e JavaScript.</p>
+                <button id="alterar-texto">Alterar Texto</button>
+            </section>
+            
+            <!-- Interesses -->
+            <section class="interesses">
+                <h2><i class="fas fa-heart"></i> Meus Interesses</h2>
+                <ul id="lista-interesses">
+                    <li>Programação Web</li>
+                    <li>Tecnologia</li>
+                    <li>Jogos</li>
+                    <li>Música</li>
+                </ul>
+                <button id="adicionar-interesse">Adicionar Interesse</button>
+            </section>
+            
+            <!-- Contador de visitas -->
+            <section class="contador">
+                <h2><i class="fas fa-eye"></i> Contador de Visitas</h2>
+                <p>Esta página foi visualizada <span id="visitas">0</span> vezes.</p>
+                <button id="reset-contador">Zerar Contador</button>
+            </section>
+            
+            <!-- Trocar tema -->
+            <section class="tema">
+                <h2><i class="fas fa-palette"></i> Personalizar Tema</h2>
+                <div class="cores">
+                    <button class="cor-btn" data-cor="#4CAF50" style="background-color: #4CAF50;">Verde</button>
+                    <button class="cor-btn" data-cor="#2196F3" style="background-color: #2196F3;">Azul</button>
+                    <button class="cor-btn" data-cor="#9C27B0" style="background-color: #9C27B0;">Roxo</button>
+                    <button class="cor-btn" data-cor="#FF9800" style="background-color: #FF9800;">Laranja</button>
+                </div>
+                <button id="modo-noturno">Ativar Modo Noturno</button>
+            </section>
+        </main>
+        
+        <!-- Rodapé -->
+        <footer>
+            <p>Feito com <i class="fas fa-heart" style="color: red;"></i> por <span id="nome-rodape">Você</span></p>
+            <p id="data-atual"></p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
